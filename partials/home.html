@@ -1,0 +1,23 @@
+<section>
+    <div class="container md-whiteframe-10dp">
+                
+        <div class="jumbotron">
+            <h2>Import Performance</h2>
+        </div>
+        
+        <md-content>
+            <md-list id="carList">
+                <md-list-item class="md-2-line carListItem" ng-repeat="car in carList" ng-href="#/carDetails/{{$index}}">
+                <img ng-src="images/{{car.img}}.jpg" class="md-avatar" alt="{{car.model}}" />
+                    <div class="md-list-item-text">
+                    <h3>{{ car.model }}</h3>
+                    <h4>{{ car.make }}</h4>
+                    <p>{{ car.year }}</p>
+                    </div>
+                </md-list-item>
+            </md-list>
+        </md-content>
+        
+    
+    </div> <!-- END div.container -->
+</section>

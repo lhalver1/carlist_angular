@@ -1,0 +1,28 @@
+<section>
+    <div class="container md-whiteframe-10dp">
+        
+        <h1>Car Details</h1>
+        
+        <div layout="row" layout-align="center center">
+            <md-card id="detailsCard">
+                <md-card-title>
+                    <md-card-title-text>
+                        <span class="md-headline">{{selectedCar.year}} {{selectedCar.model}}</span>
+                        <span class="md-subhead">{{selectedCar.make}}</span>
+                    </md-card-title-text>
+                    <md-card-title-media>
+                        <img ng-src="images/{{selectedCar.img}}.jpg" alt="{{selectedCar.model}}" />
+                    </md-card-title-media>
+                </md-card-title>
+                
+                <md-card-actions layout="row" layout-align="end center">
+                    <md-button>Action 1</md-button>
+                    <md-button>Action 2</md-button>
+                </md-card-actions>
+            </md-card>
+        </div>
+        
+        <a href="#/" style="margin-bottom: 8px;">&laquo; Back Home</a>
+        
+    </div>
+</section>
